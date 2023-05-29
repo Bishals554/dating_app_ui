@@ -16,27 +16,30 @@ class ChatPage extends StatelessWidget {
       ),
       body:ListView(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              const Text(
-                "Messages",
-                style: TextStyle(
-                    fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFD5C61)),
-              ),
-              Container(
-                height: 25,
-                width: 1,
-                decoration: BoxDecoration(color: Colors.black.withOpacity(0.15)),
-              ),
-              Text(
-                "Matches",
-                style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black.withOpacity(0.5)),
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                const Text(
+                  "Messages",
+                  style: TextStyle(
+                      fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFD5C61)),
+                ),
+                Container(
+                  height: 25,
+                  width: 1,
+                  decoration: BoxDecoration(color: Colors.black.withOpacity(0.15)),
+                ),
+                Text(
+                  "Matches",
+                  style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black.withOpacity(0.5)),
+                ),
+              ],
+            ),
           ),
           const SizedBox(
           height: 10,

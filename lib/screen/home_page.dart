@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
               Positioned(
                 bottom: 100,
                 right: 40,
-                child: IconButton(icon: Icon(Icons.favorite, color: Colors.white, size: 40,),onPressed: (){}, ))
+                child: IconButton(icon: const Icon(Icons.favorite, color: Colors.white, size: 40,),onPressed: (){}, ))
         
             ]
             

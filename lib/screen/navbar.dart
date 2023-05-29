@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:simple_date/screen/chat_page.dart';
 import 'package:simple_date/screen/home_page.dart';
+import 'package:simple_date/screen/profile_page.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({Key? key}) : super(key: key);
@@ -17,16 +18,13 @@ class _NavBarState extends State<NavBar> {
 
    static const List<Widget> _pages = <Widget>[
     HomePage(),
-  Icon(
-    Icons.camera,
-    size: 150,
-  ),
- ChatPage(),
-  Icon(
+    ProfilePage(),
+    ChatPage(),
+    Icon(
     Icons.chat,
     size: 150,
-  ),
-];
+    ),
+  ];
 
   @override
   void _onItemTapped(int index) {
