@@ -53,6 +53,13 @@ List<User>users = [
       age: 21,
       gender: 'Female',
       imageUrl: 'https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80'
+  ),
+  User(
+      rating: '⭐⭐⭐⭐⭐',
+      name: 'Rojan Parajuli',
+      age: 22,
+      gender: 'male',
+      imageUrl: 'https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/333447932_549671063631140_3746730517902871524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=pKL18stN9DMAX-536CC&_nc_ht=scontent.fktm17-1.fna&oh=00_AfDS2LHQFm9QnUZKpl0aN9cCk9xLhHvlGp_BLaUqZVuixA&oe=6479E466'
   )
 
 ];

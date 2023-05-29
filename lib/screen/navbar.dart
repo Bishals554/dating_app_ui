@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:simple_date/screen/chat_page.dart';
 import 'package:simple_date/screen/home_page.dart';
 
 class NavBar extends StatefulWidget {
@@ -20,6 +21,7 @@ class _NavBarState extends State<NavBar> {
     Icons.camera,
     size: 150,
   ),
+ ChatPage(),
   Icon(
     Icons.chat,
     size: 150,
@@ -54,6 +56,10 @@ class _NavBarState extends State<NavBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_rounded),
+            label: 'Chat',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
