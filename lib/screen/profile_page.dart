@@ -46,14 +46,6 @@ class ProfilePage extends StatelessWidget {
                           child: Image.network('https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/333447932_549671063631140_3746730517902871524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=pKL18stN9DMAX-536CC&_nc_ht=scontent.fktm17-1.fna&oh=00_AfDS2LHQFm9QnUZKpl0aN9cCk9xLhHvlGp_BLaUqZVuixA&oe=6479E466', fit: BoxFit.cover,),
                         ),
                       )
-                      // Container(
-                      //   margin: const EdgeInsets.all(5),
-                      //   decoration: BoxDecoration(
-                      //     shape: BoxShape.circle,
-                      //     color: Colors.blue,
-                      //   ),
-                      //   child: Image.network('https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/333447932_549671063631140_3746730517902871524_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=pKL18stN9DMAX-536CC&_nc_ht=scontent.fktm17-1.fna&oh=00_AfDS2LHQFm9QnUZKpl0aN9cCk9xLhHvlGp_BLaUqZVuixA&oe=6479E466'),
-                      // ),
                       ),
                       
                     ),
@@ -99,6 +91,20 @@ class ProfilePage extends StatelessWidget {
                   ),onPressed: (){}, style: ElevatedButton.styleFrom(minimumSize: const Size(190, 35), backgroundColor: Colors.grey), label: const Text('See dashboard', style: TextStyle(fontSize: 16, color: Colors.black),)),
                 ],
               ),
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton.icon(icon: Icon(Icons.edit), onPressed: (){}, label: Text('Edit Profile', style: TextStyle(fontSize: 16),), style: ElevatedButton.styleFrom(minimumSize: const Size(320, 35)),),
+                Container(
+                  height: 35,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(6),
+                    color: Colors.grey
+                  ),
+                  child: IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)))
+              ],
             ),
             
           ],
