@@ -69,9 +69,7 @@ class ChatPage extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-
-
-
+        
          Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -128,7 +126,9 @@ class ChatPage extends StatelessWidget {
                                           shape: BoxShape.circle,
                                           image: DecorationImage(
                                               image: NetworkImage(
-                                                  chats[index].image),
+
+                                                  chats[index].image,
+                                                  ),
                                               fit: BoxFit.cover)),
                                     ),
                               chats[index].online

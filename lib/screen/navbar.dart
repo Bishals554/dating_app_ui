@@ -20,10 +20,7 @@ class _NavBarState extends State<NavBar> {
     HomePage(),
     ProfilePage(),
     ChatPage(),
-    Icon(
-    Icons.chat,
-    size: 150,
-    ),
+   Icon(Icons.settings),
   ];
 
   @override
